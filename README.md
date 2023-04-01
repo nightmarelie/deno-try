@@ -11,3 +11,6 @@
 
 # Show info
 `deno info main.ts`
+
+# Create bundle
+`deno bundle main.ts >> bundle.ts`
