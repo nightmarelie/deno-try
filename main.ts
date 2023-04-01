@@ -1,4 +1,5 @@
 import { Application, Router } from "https://deno.land/x/oak/mod.ts";
+import { page } from "./page.tsx";
 
 const app = new Application();
 const router = new Router();
@@ -9,6 +10,10 @@ router.get("/", (ctx) => {
 
 router.get("/about", (ctx) => {
   ctx.response.body = "About Page";
+});
+
+router.get("/page", (ctx) => {
+  ctx.response.body = page({ title: "Page Title" });
 });
 
 app.use(router.routes());
