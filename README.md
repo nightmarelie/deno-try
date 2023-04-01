@@ -6,6 +6,8 @@
 ## 2. In settings we need to enable deno support
 `"deno.enable": true`
 
-
 # Run the main file
 `deno run main.ts`
+
+# Show info
+`deno info main.ts`
